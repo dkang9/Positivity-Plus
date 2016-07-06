@@ -1,0 +1,149 @@
+#body {
+    background: url("http://cdn.pcwallart.com/images/beach-tumblr-wallpaper-2.jpg");
+    background-size: 100%;
+    filter: blur(3px);
+}
+
+#body2 {
+  background-color: #F7F3E6;
+  
+}
+
+#backbutton {
+  position: fixed;
+  top: 5%;
+  left: 95%;
+}
+#textbox {
+  opacity: .8;
+}
+
+#box {
+  opacity:.6;
+}
+#text {
+    color: #8ACDC3;
+    font-size:40px;
+    font-family: Simplifica;
+}
+
+#title {
+    font-family: Simplifica;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+#maintext {
+    font-size: 50px;
+}
+.circle-text:after {
+    content: "";
+    display: block;
+    height:0;
+    padding-bottom: 100%;
+    background: #8ACDC3 ; 
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+}
+
+.circle-text div {
+    color: #e1bee7 ; font-family: Simplifica, Georgia;
+    font-size: 100px; font-weight: thin; 
+    line-height: 48px; margin: 0 0 50px; 
+    text-align: center; 
+    float:left;
+    width:100%;
+    padding-top:50%;
+    line-height:1em;
+    margin-top:-0.5em;
+    text-align:center;
+    color:white;
+}
+
+#circle {
+    position: fixed;
+    top: 10%;
+    left: 65%;
+}
+
+@keyframes greenPulse {
+  0% {box-shadow:0 0 30px #4bbec8}
+  50% {box-shadow:0 0 80px #4bbec8}
+  100% {box-shadow:0 0 30px #4bbec8}
+}
+/* Bob */
+@-webkit-keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+
+  50% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@-webkit-keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}

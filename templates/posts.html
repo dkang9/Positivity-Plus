@@ -1,0 +1,41 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+        
+        <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+        
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+       
+        <link rel="stylesheet" href="{% static 'css/home.css' %}">   
+        
+    </head>
+    
+    <body id = "body2">
+      <div id="backbutton">
+        <a href="/bubbles">
+          <img src="http://mixvassallo.com/website/frontend/css/images/back-button.png" height="50px">
+        </a>
+      </div>
+    <div class="row">
+
+      <div class="circle-text hvr-bob" id="circle" style="width:400px;">
+        <div>
+        {% for p in posts_top %} 
+        {{p.key}}
+        </div>
+      </div>
+      
+      <div class="col s3">
+        {% for sentence in p.text %} 
+        <div class="card-panel  #8ACDC3" id ="text">{{sentence}}</div>
+
+        {% endfor %}
+        {% endfor %}
+      </div>
+      
+  </body>
+    
+</html>
